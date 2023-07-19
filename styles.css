@@ -1,0 +1,59 @@
+body{
+    background-color: #333;
+    font-family: helvetica;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.clock{
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    background: #333;
+    color:#fff;
+    text-align: center;
+    
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock span{
+    margin-right: 0.5rem;
+}
+.clock::before, .clock::after{
+    content: '';
+    position: absolute;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    z-index: -1;
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff,
+                                       #001aff, #a200ff, #ff0055, 
+                                       #ff0000, #ffff00, #00ff00, 
+                                       #0099ff, #001aff, #a200ff,
+                                       #ffff00, #00ff00, #0099ff,
+                                       #001aff, #a200ff, #ff0055, 
+                                       #ff0000, #ffff00, #00ff00, 
+                                       #0099ff, #001aff, #a200ff);
+    background-size: 250%;  
+    border-radius: 1rem; 
+    animation: AnimarBorda 10s linear alternate infinite;                                
+}
+@keyframes AnimarBorda{
+    0%{
+       background-position: 0%;
+    }
+    100%{
+       background-position: 250%;
+    }
+}
+
+.clock::after{
+    filter: blur(50px);
+}
