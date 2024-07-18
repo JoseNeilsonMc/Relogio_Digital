@@ -38,7 +38,12 @@ O arquivo CSS (`styles.css`) define a aparência do relógio, incluindo a anima�
 ## Autor
 
 Jose Neilson dos Santos
-
 ## Licença
 
-Este projeto é licenciado sob a MIT License.
+Este projeto está licenciado sob a [MIT License](link-da-licença).
+
+---
+
+[Clique aqui para acessar o projeto no GitHub](https://joseneilsonmc.github.io/Relogio_Digital/)
+
+
